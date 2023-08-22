@@ -18,25 +18,39 @@ usando o common js
 * usar arquivo controller.js no diretório src/controllers;
 * usar arquivo service.js no diretório src/services;
 
-cuidado ao fazer a api: req.params.(), req.body.();
+### interface contato
+
+* id *
+* nome *
+* email ?
+* ramal ?
+* celular ?
+* departamento * (select)
+
+### tela de cadastro
+
+* formulário criar ou atualizar contato
+
+cuidado ao fazer a api: req.params.(parametro), req.body.(corpo da requisição);
 
 ### Implementar os verbos http para a api
 
     `GET`: Buscar informações do backend;
+    `GETID`: Buscar informações do backend por contato;
     `POST`: Criar uma informação no backend;
     `PUT`: Alterar uma informação no backend.
     `DELETE`: Deletar uma informação no backend;
 
 Fazer a api com:
 
-* nodejs
-* express
-* dotenv
-* cors
-* mysql2
+* nodejs;
+* express;
+* dotenv;
+* cors;
+* mysql2;
 * nodemon;
 
-* ver mais sobre o swagger;
+* **ver mais sobre o swagger para documentação**
 
 ----------------------////-------------------------
 
