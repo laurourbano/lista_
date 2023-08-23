@@ -65,6 +65,22 @@ Fazer a api com:
 * [ ] criar services
 * [ ] criar pipes
 * [ ] criar diretivas
+* [ ] modulo shared com app-material
+* [ ] implementar o lazy loading para lista e formulário
+
+### components
+
+* [ ] [select](https://material.angular.io/components/select/overview)
+* [ ] [table](https://material.angular.io/components/table/overview)
+* [ ] [icon](https://material.angular.io/components/icon/overview)
+* [ ] [input](https://material.angular.io/components/input/overview)
+* [ ] [card](https://material.angular.io/components/card/overview)
+* [ ] [formfield](https://material.angular.io/components/form-field/overview)
+* [ ] [dialog](https://material.angular.io/components/dialog/overview)
+* [ ] [toolbar](https://material.angular.io/components/toolbar/overview)
+* [ ] [progress-spinner](https://material.angular.io/components/progress-spinner/overview)
+* [ ] [paginator](https://material.angular.io/components/paginator/overview)
+* [ ] [button](https://material.angular.io/components/button/overview)
 
 ----------------------////-------------------------
 
