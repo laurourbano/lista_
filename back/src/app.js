@@ -17,6 +17,7 @@ app.use("/api", routes);
 
 const port = process.env.PORT || 3000;
 
-app.listen(() => {
-    console.log(`Server is running on port ${port}.`);
-})
+app.listen(
+    port,
+    () => console.log(`API rodando na porta ${port}`)
+)
