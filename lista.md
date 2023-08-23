@@ -51,7 +51,7 @@ Fazer a api com:
 * [x] dotenv;
 * [x] cors;
 * [x] mysql2;
-* [x] nodemon - dependência de desen;
+* [x] nodemon - dependência de desenvolvimento;
 
 * [ ] **ver mais sobre o swagger para documentação**
 
@@ -91,6 +91,8 @@ Fazer a api com:
 * [ ] [paginator](https://material.angular.io/components/paginator/overview) - usar na tabela
 
 * [ ] [button](https://material.angular.io/components/button/overview) - usar para as ações adicionar(abre nova página formulário), atualizar(abre nova página formulário) e excluir
+
+* [ ] [front](./front/lista/src/app/app.component.html)
 
 ----------------------////-------------------------
 

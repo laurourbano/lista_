@@ -1,5 +1,6 @@
 <table>
   <tr>
+    <th>Id</th>
     <th>Nome</th>
     <th>Telefone</th>
     <th>Email</th>
@@ -7,6 +8,7 @@
     <th>Departamento</th>
   </tr>
   <tr *ngFor="let contato of lista">
+    <td>{{contato.id}}</td>
     <td>{{contato.nome}}</td>
     <td>{{contato.telefone}}</td>
     <td>{{contato.email}}</td>
