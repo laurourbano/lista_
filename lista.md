@@ -23,7 +23,7 @@ usando o common js
 * id *
 * nome *
 * email ?
-* ramal ?
+* telefone ?
 * celular ?
 * departamento * (select)
 
