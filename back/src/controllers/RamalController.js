@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const RamalService = require('../services/RamalService');
 
 module.exports = {
@@ -81,7 +82,7 @@ module.exports = {
         let departamento = req.body.departamento;
 
         if (id && nome && email && telefone && celular && departamento) {
-            await RamalService.atualizar(id, modelo, placa);
+            await RamalService.atualizar(id, nome, email, telefone, celular, departamento);
             json.result = {
                 id,
                 nome,

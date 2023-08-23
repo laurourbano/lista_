@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-undef */
+/* eslint-disable linebreak-style */
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -13,11 +16,11 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-app.use("/api", routes);
+app.use('/api', routes);
 
 const port = process.env.PORT || 3000;
 
 app.listen(
     port,
     () => console.log(`API rodando na porta ${port}`)
-)
+);
