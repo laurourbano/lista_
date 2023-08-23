@@ -1,54 +1,54 @@
 # Lista de ramais com front-end e back-end
 
-* [artigo base](https://pt.linkedin.com/pulse/construindo-uma-api-com-nodejs-e-express-yesmin-marie-soret-lahoud)
+* [x] [artigo base](https://pt.linkedin.com/pulse/construindo-uma-api-com-nodejs-e-express-yesmin-marie-soret-lahoud)
 
-criar arquivo .gitignore global - adicionar o node_modules yarn.lock e .env
+* [x] criar arquivo .gitignore global - adicionar o node_modules yarn.lock e .env
 
-criar arquivo .env e .env.example global
+* [x] criar arquivo .env e .env.example global
 
-para para criar o arquivo package.json
+* [x] para para criar o arquivo package.json
 
 ## Back end: NodeJs
 
 `yarn init -y`
 
-usando o common js
+* [x] usando o common js
 
-* usar arquivo routes.js no diretório src/routes;
-* usar arquivo controller.js no diretório src/controllers;
-* usar arquivo service.js no diretório src/services;
+* [x] usar arquivo routes.js no diretório src/routes;
+* [x] usar arquivo controller.js no diretório src/controllers;
+* [x] usar arquivo service.js no diretório src/services;
 
 ### interface contato
 
-* id *
-* nome *
-* email ?
-* telefone ?
-* celular ?
-* departamento * (select)
+* [x] id *
+* [x] nome *
+* [x] email ?
+* [x] telefone ?
+* [x] celular ?
+* [x] departamento * (select)
 
 ### tela de cadastro
 
-* formulário criar ou atualizar contato
+* [x] formulário criar ou atualizar contato
 
-cuidado ao fazer a api: req.params.(parametro), req.body.(corpo da requisição);
+* [x] cuidado ao fazer a api: req.params.(parametro), req.body.(corpo da requisição);
 
 ### Implementar os verbos http para a api
 
-    `GET`: Buscar informações do backend;
-    `GETID`: Buscar informações do backend por contato;
-    `POST`: Criar uma informação no backend;
-    `PUT`: Alterar uma informação no backend.
-    `DELETE`: Deletar uma informação no backend;
+* [x] `GET`: Buscar informações do backend;
+* [x] `GETID`: Buscar informações do backend por contato;
+* [x] `POST`: Criar uma informação no backend;
+* [x] `PUT`: Alterar uma informação no backend.
+* [x] `DELETE`: Deletar uma informação no backend;
 
 Fazer a api com:
 
-* nodejs;
-* express;
-* dotenv;
-* cors;
-* mysql2;
-* nodemon;
+* [x] nodejs;
+* [x] express;
+* [x] dotenv;
+* [x] cors;
+* [x] mysql2;
+* [x] nodemon;
 
 * **ver mais sobre o swagger para documentação**
 
@@ -56,16 +56,16 @@ Fazer a api com:
 
 ## Front end: Angular
 
-`ng new lista`
+* [x] `ng new lista`
 
-* criar components, services, pipes, diretivas e etc...
+* [x] criar components, services, pipes, diretivas e etc...
 
 ----------------------////-------------------------
 
 ### IDEIAS
 
-* select para o departamento;
-* usar o angular material para estilizar os componentes;
-* usar a fonte Poppins;
-* pensar na paleta de cores padrão para o angular;
-* utilizar o thunderclient para testar a api;
+* [x] select para o departamento;
+* [x] usar o angular material para estilizar os componentes;
+* [x] usar a fonte Poppins;
+* [x] pensar na paleta de cores padrão para o angular;
+* [x] utilizar o thunderclient para testar a api;
