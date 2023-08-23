@@ -21,7 +21,7 @@
 
 ### interface contato
 
-#### criar banco de dados lista, com uma tabela ramais, que contenha as colunas
+#### criar banco de dados MYSQL lista, com uma tabela ramais, que contenha as colunas
 
 * [x] id *
 * [x] nome *
@@ -71,16 +71,26 @@ Fazer a api com:
 ### components
 
 * [ ] [select](https://material.angular.io/components/select/overview) - usar para o departamento
+
 * [ ] [table](https://material.angular.io/components/table/overview) - usar para a lista
+
 * [ ] [icon](https://material.angular.io/components/icon/overview) - usar para os botões
+
 * [ ] [input](https://material.angular.io/components/input/overview) - usar para o formulário
+
 * [ ] [card](https://material.angular.io/components/card/overview) - usar para encapsular o app
+
 * [ ] [formfield](https://material.angular.io/components/form-field/overview) - usar para o formulário
+
 * [ ] [dialog](https://material.angular.io/components/dialog/overview) - usar para confirmar exclusão
-* [ ] [toolbar](https://material.angular.io/components/toolbar/overview)
+
+* [ ] [toolbar](https://material.angular.io/components/toolbar/overview) - usar para fazer as rotas da pagina
+
 * [ ] [progress-spinner](https://material.angular.io/components/progress-spinner/overview) - usar no carregamento das páginas
+
 * [ ] [paginator](https://material.angular.io/components/paginator/overview) - usar na tabela
-* [ ] [button](https://material.angular.io/components/button/overview) - usar para as ações adicionar, atualizar e excluir
+
+* [ ] [button](https://material.angular.io/components/button/overview) - usar para as ações adicionar(abre nova página formulário), atualizar(abre nova página formulário) e excluir
 
 ----------------------////-------------------------
 
