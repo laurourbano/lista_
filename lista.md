@@ -1,24 +1,27 @@
 # Lista de ramais com front-end e back-end
 
-* [x] [artigo base](https://pt.linkedin.com/pulse/construindo-uma-api-com-nodejs-e-express-yesmin-marie-soret-lahoud)
+* [ ] [artigo base](https://pt.linkedin.com/pulse/construindo-uma-api-com-nodejs-e-express-yesmin-marie-soret-lahoud)
 
 * [x] criar arquivo .gitignore global - adicionar o node_modules yarn.lock e .env
 
 * [x] criar arquivo .env e .env.example global
 
-* [x] para para criar o arquivo package.json
+* [x] criar o arquivo package.json e adicionar os scripts
 
 ## Back end: NodeJs
 
-`yarn init -y`
+* [x] `yarn init -y`
 
 * [x] usando o common js
+* [x] adicionar e configurar o eslint
 
 * [x] usar arquivo routes.js no diretório src/routes;
 * [x] usar arquivo controller.js no diretório src/controllers;
 * [x] usar arquivo service.js no diretório src/services;
 
 ### interface contato
+
+#### criar banco de dados lista, com uma tabela ramais, que contenha as colunas
 
 * [x] id *
 * [x] nome *
@@ -29,9 +32,9 @@
 
 ### tela de cadastro
 
-* [x] formulário criar ou atualizar contato
+* [ ] formulário criar ou atualizar contato
 
-* [x] cuidado ao fazer a api: req.params.(parametro), req.body.(corpo da requisição);
+* [ ] cuidado ao fazer a api: req.params.(parametro), req.body.(corpo da requisição);
 
 ### Implementar os verbos http para a api
 
@@ -50,7 +53,7 @@ Fazer a api com:
 * [x] mysql2;
 * [x] nodemon;
 
-* **ver mais sobre o swagger para documentação**
+* [ ] **ver mais sobre o swagger para documentação**
 
 ----------------------////-------------------------
 
@@ -58,14 +61,17 @@ Fazer a api com:
 
 * [x] `ng new lista`
 
-* [x] criar components, services, pipes, diretivas e etc...
+* [ ] criar components
+* [ ] criar services
+* [ ] criar pipes
+* [ ] criar diretivas
 
 ----------------------////-------------------------
 
 ### IDEIAS
 
-* [x] select para o departamento;
-* [x] usar o angular material para estilizar os componentes;
-* [x] usar a fonte Poppins;
-* [x] pensar na paleta de cores padrão para o angular;
+* [ ] select para o departamento;
+* [ ] usar o angular material para estilizar os componentes;
+* [ ] usar a fonte Poppins;
+* [ ] pensar na paleta de cores padrão para o angular;
 * [x] utilizar o thunderclient para testar a api;
