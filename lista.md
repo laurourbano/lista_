@@ -51,7 +51,7 @@ Fazer a api com:
 * [x] dotenv;
 * [x] cors;
 * [x] mysql2;
-* [x] nodemon;
+* [x] nodemon - dependência de desen;
 
 * [ ] **ver mais sobre o swagger para documentação**
 
