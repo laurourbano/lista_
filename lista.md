@@ -54,6 +54,7 @@ Fazer a api com:
 * [x] nodemon - dependência de desenvolvimento;
 
 * [ ] **ver mais sobre o swagger para documentação**
+* [ ] **tentar implementar a internacionalização i18n**
 
 ----------------------////-------------------------
 
@@ -61,11 +62,23 @@ Fazer a api com:
 
 * [x] `ng new lista`
 
+* [ ] instalar angular material
+
 * [ ] criar components
+`ng g c (nome do componente)`
+
 * [ ] criar services
+`ng g s (nome do service)`
+
 * [ ] criar pipes
+`ng g p (nome do pipe)`
+
 * [ ] criar diretivas
+`ng g d (nome da diretiva)`
+
 * [ ] modulo shared com app-material
+`ng g m shared/app-material`
+
 * [ ] implementar o lazy loading para lista e formulário
 
 ### components
