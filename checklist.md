@@ -1,111 +1,70 @@
-# Cheklist para lista de ramais
+## Configuração Inicial
+- [ ] Criar arquivo `.gitignore` global - adicionar `node_modules`, `yarn.lock`, e `.env`.
+- [ ] Criar arquivo `.env` e `.env.example` global.
+- [ ] Criar o arquivo `package.json` e adicionar os scripts.
+  - [ ] `yarn init -y`.
+- [ ] Usar o CommonJS.
+- [ ] Adicionar e configurar o ESLint.
 
-* [ ] [artigo base para o projeto](https://pt.linkedin.com/pulse/construindo-uma-api-com-nodejs-e-express-yesmin-marie-soret-lahoud)
+## Estrutura de Diretórios
+- [ ] Usar arquivo `routes.js` no diretório `src/routes`.
+- [ ] Usar arquivo `controller.js` no diretório `src/controllers`.
+- [ ] Usar arquivo `service.js` no diretório `src/services`.
 
-* [x] criar arquivo .gitignore global - adicionar o node_modules yarn.lock e .env
+## Campos do Contato
+- [ ] Id *
+- [ ] Nome *
+- [ ] Email ?
+- [ ] Telefone ?
+- [ ] Celular ?
+- [ ] Departamento * (select)
 
-* [x] criar arquivo .env e .env.example global
+## Funcionalidades da API
+- [ ] `GET`: Buscar informações do backend.
+- [ ] `GETID`: Buscar informações do backend por contato.
+- [ ] `POST`: Criar uma informação no backend.
+- [ ] `PUT`: Alterar uma informação no backend.
+- [ ] `DELETE`: Deletar uma informação no backend.
 
-* [x] criar o arquivo package.json e adicionar os scripts
+## Tecnologias (Backend)
+- [ ] Node.js.
+- [ ] Express.
+- [ ] dotenv.
+- [ ] cors.
+- [ ] mysql2.
+- [ ] Nodemon (dependência de desenvolvimento).
+- [ ] Ver mais sobre o Swagger para documentação.
+- [ ] Tentar implementar a internacionalização (i18n).
 
-* [x] `yarn init -y`
+## Frontend (Angular)
+- [ ] `ng new lista`.
+- [ ] Instalar Angular Material.
+- [ ] Criar components com `ng g c (nome do componente)`.
+- [ ] Criar services com `ng g s (nome do service)`.
+- [ ] Criar pipes com `ng g p (nome do pipe)`.
+- [ ] Criar diretivas com `ng g d (nome da diretiva)`.
+- [ ] Criar módulo shared com app-material `ng g m shared/app-material`.
+- [ ] Implementar o lazy loading para lista e formulário.
 
-* [x] usando o common js
+## Componentes Angular Material
+- [ ] Usar `select` para o departamento.
+- [ ] Usar `table` para a lista.
+- [ ] Usar `icon` para os botões.
+- [ ] Usar `input` para o formulário.
+- [ ] Usar `card` para encapsular o app.
+- [ ] Usar `formfield` para o formulário.
+- [ ] Usar `dialog` para confirmar exclusão.
+- [ ] Usar `toolbar` para fazer as rotas da página.
+- [ ] Usar `progress-spinner` no carregamento das páginas.
+- [ ] Usar `paginator` na tabela.
+- [ ] Usar `button` para adicionar (abre formulário), atualizar (abre formulário) e excluir.
 
-* [x] adicionar e configurar o eslint
+## Estilo e Design
+- [ ] Usar o Angular Material para estilizar os componentes.
+- [ ] Usar a fonte Poppins.
+- [ ] Pensar na paleta de cores padrão para o Angular.
 
-* [x] usar arquivo routes.js no diretório src/routes;
+## Testes e Documentação
+- [ ] Utilizar o Thunderclient para testar a API.
 
-* [x] usar arquivo controller.js no diretório src/controllers;
-
-* [x] usar arquivo service.js no diretório src/services;
-
-* [x] id *
-
-* [x] nome *
-
-* [x] email ?
-
-* [x] telefone ?
-
-* [x] celular ?
-
-* [x] departamento * (select)
-
-* [ ] formulário criar ou atualizar contato
-
-* [ ] cuidado para a api: req.params.(parametro), req.body.(corpo da requisição);
-
-* [x] `GET`: Buscar informações do backend;
-
-* [x] `GETID`: Buscar informações do backend por contato;
-
-* [x] `POST`: Criar uma informação no backend;
-
-* [x] `PUT`: Alterar uma informação no backend.
-
-* [x] `DELETE`: Deletar uma informação no backend;
-
-* [x] nodejs;
-
-* [x] express;
-
-* [x] dotenv;
-
-* [x] cors;
-
-* [x] mysql2;
-
-* [x] nodemon - dependência de desenvolvimento;
-
-* [ ] **ver mais sobre o swagger para documentação**
-
-* [ ] **tentar implementar a internacionalização i18n**
-
-* [x] `ng new lista`
-
-* [ ] instalar angular material
-
-* [ ] criar components `ng g c (nome do componente)`
-
-* [ ] criar services `ng g s (nome do service)`
-
-* [ ] criar pipes `ng g p (nome do pipe)`
-
-* [ ] criar diretivas `ng g d (nome da diretiva)`
-
-* [ ] modulo shared com app-material `ng g m shared/app-material`
-
-* [ ] implementar o lazy loading para lista e formulário
-
-* [ ] [select](https://material.angular.io/components/select/overview) - usar para o departamento
-
-* [ ] [table](https://material.angular.io/components/table/overview) - usar para a lista
-
-* [ ] [icon](https://material.angular.io/components/icon/overview) - usar para os botões
-
-* [ ] [input](https://material.angular.io/components/input/overview) - usar para o formulário
-
-* [ ] [card](https://material.angular.io/components/card/overview) - usar para encapsular o app
-
-* [ ] [formfield](https://material.angular.io/components/form-field/overview) - usar para o formulário
-
-* [ ] [dialog](https://material.angular.io/components/dialog/overview) - usar para confirmar exclusão
-
-* [ ] [toolbar](https://material.angular.io/components/toolbar/overview) - usar para fazer as rotas da pagina
-
-* [ ] [progress-spinner](https://material.angular.io/components/progress-spinner/overview) - usar no carregamento das páginas
-
-* [ ] [paginator](https://material.angular.io/components/paginator/overview) - usar na tabela
-
-* [ ] [button](https://material.angular.io/components/button/overview) - adicionar(abre formulário), atualizar(abre formulário) e excluir
-
-* [ ] select para o departamento;
-
-* [ ] usar o angular material para estilizar os componentes;
-
-* [ ] usar a fonte Poppins;
-
-* [ ] pensar na paleta de cores padrão para o angular;
-
-* [x] utilizar o thunderclient para testar a api;
+Este checklist está organizado de forma mais clara e agrupada por itens afins, o que deve facilitar o acompanhamento do progresso do projeto. Certifique-se de marcar os itens à medida que forem sendo concluídos.
