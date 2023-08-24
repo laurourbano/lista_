@@ -5,7 +5,9 @@ import { TableComponent } from './components/table/table.component';
 
 const routes: Routes = [
   { path: '', component: TableComponent },
-  { path: 'formulario', component: ContatoFormComponent }
+  { path: 'formulario', component: ContatoFormComponent },
+  { path: 'formulario/:id', component: ContatoFormComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
