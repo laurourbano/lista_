@@ -8,13 +8,5 @@ import { Contato } from './model/contato';
 })
 export class AppComponent {
   title = 'lista';
-  lista: Contato[] = [];
-
-  constructor(private http: HttpClient) {
-    this.http.get('http://localhost:3000/api/ramais').subscribe((data: any) => {
-      console.log(data.result); //
-      this.lista = data.result;
-    });
-  }
 
 }
