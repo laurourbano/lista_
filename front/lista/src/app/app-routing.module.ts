@@ -6,9 +6,10 @@ import { TableComponent } from './components/table/table.component';
 
 const routes: Routes = [
   { path: '', component: TableComponent },
-  { path: 'formulario', component: ContatoFormComponent },
+  { path: 'contato', component: ContatoFormComponent },
   { path: 'formulario/:id', component: ContatoFormComponent },
-  { path: 'departamento/new', component: DepartamentoFormComponent },
+  { path: 'departamento', component: DepartamentoFormComponent },
+  { path: 'departamento/:id', component: DepartamentoFormComponent },
   { path: '**', redirectTo: '' }
 ];
 
