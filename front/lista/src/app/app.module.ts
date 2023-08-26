@@ -10,13 +10,15 @@ import { AppMaterialModule } from './shared/app-material/app-material.module';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { TableComponent } from './components/table/table.component';
 import { ContatoFormComponent } from './components/contato-form/contato-form.component';
+import { DepartamentoFormComponent } from './components/departamento-form/departamento-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     TableComponent,
-    ContatoFormComponent
+    ContatoFormComponent,
+    DepartamentoFormComponent
   ],
   imports: [
     BrowserModule,

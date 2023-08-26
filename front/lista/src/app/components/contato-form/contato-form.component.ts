@@ -1,19 +1,39 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material/core';
+import { ActivatedRoute } from '@angular/router';
+import { ListaService } from 'src/app/services/lista.service';
 @Component({
   selector: 'app-contato-form',
   templateUrl: './contato-form.component.html',
   styleUrls: [ './contato-form.component.scss' ]
 })
 export class ContatoFormComponent {
-  emailFormControl = new FormControl('', [ Validators.required, Validators.email ]);
-  matcher = new MyErrorStateMatcher();
 
-}
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  selectedValue!: string;
+
+  departamentos: Departamento[] = [
+    { value: 'Administrativo' },
+    { value: 'Cadastro' },
+    { value: 'Cozinha' },
+    { value: 'Compras' },
+    { value: 'Comunicação' },
+    { value: 'Copa' },
+    { value: 'Diretoria' },
+    { value: 'Financeiro' },
+    { value: 'Fiscalização' },
+    { value: 'Jurídico' },
+    { value: 'Limpeza' },
+    { value: 'Ouvidoria' },
+    { value: 'Portaria' },
+    { value: 'Recursos Humanos' },
+    { value: 'Recepção' },
+    { value: 'Tecnologia da Informação' },
+    { value: 'Técnico Científico' }
+  ];
+
+  constructor(private service: ListaService, private activeRoute: ActivatedRoute) {
+
   }
+}
+interface Departamento {
+  value: string;
 }

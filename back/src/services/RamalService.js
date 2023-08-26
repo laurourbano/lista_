@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 const db = require('../db');
+
 module.exports = {
     buscarTodos: () => {
         return new Promise((aceito, rejeitado) => {

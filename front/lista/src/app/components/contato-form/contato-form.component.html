@@ -1,23 +1,39 @@
-<form>
-  <mat-form-field class="example-form-field">
-    <mat-label>Nome</mat-label>
-    <input matInput type="text">
-  </mat-form-field>
-  <mat-form-field class="example-form-field">
-    <mat-label>E-mail</mat-label>
-    <input matInput type="email">
-  </mat-form-field>
-  <mat-form-field class="example-form-field">
-    <mat-label>Telefone</mat-label>
-    <input matInput type="text">
-  </mat-form-field>
-  <mat-form-field class="example-form-field">
-    <mat-label>Celular</mat-label>
-    <input matInput type="text">
-  </mat-form-field>
-  <mat-form-field class="example-form-field">
-    <mat-label>Departamento</mat-label>
-    <input matInput type="text">
-  </mat-form-field>
-  <button mat-raised-button color="primary">Salvar</button>
-</form>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Formulário de Contato</mat-card-title>
+    <mat-card-subtitle>Formulário de contato</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field class="example-form-field">
+        <mat-label>Nome</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+      <mat-form-field class="example-form-field">
+        <mat-label>E-mail</mat-label>
+        <input matInput type="email">
+      </mat-form-field>
+      <mat-form-field class="example-form-field">
+        <mat-label>Telefone</mat-label>
+        <input matInput type="tel">
+      </mat-form-field>
+      <mat-form-field class="example-form-field">
+        <mat-label>Celular</mat-label>
+        <input matInput type="tel">
+      </mat-form-field>
+      <button routerLink="/departamento/new" mat-stroked-button color="primary">
+        <mat-icon class="mat-18">add</mat-icon> Adicionar departamento
+      </button>
+      <p></p>
+      <mat-form-field>
+        <mat-label>Departamento</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food">
+          <mat-option *ngFor="let departamento of departamentos" [value]="departamento.value">
+            {{departamento.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Salvar</button>
+    </form>
+  </mat-card-content>
+</mat-card>

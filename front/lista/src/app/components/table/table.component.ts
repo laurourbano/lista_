@@ -3,7 +3,6 @@ import { Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { ActivatedRoute } from '@angular/router';
 import { Contato } from 'src/app/model/contato';
 import { ListaService } from 'src/app/services/lista.service';
 
@@ -22,8 +21,8 @@ export class TableComponent {
 
   lista: Contato[] = [];
 
-  constructor(private http: HttpClient, private service: ListaService, private activeRoute: ActivatedRoute) {
-    this.http.get('http://localhost:3000/api/ramais').subscribe((data: any) => {
+  constructor(private http: HttpClient, private service: ListaService) {
+    this.service.buscarTodos().subscribe((data: any) => {
       this.lista = data.result;
       this.dataSource = new MatTableDataSource(this.lista);
       this.dataSource.paginator = this.paginator;
@@ -38,26 +37,16 @@ export class TableComponent {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
-    this.refresh();
-
   }
 
   onDelete(contato: Contato) {
-    if (confirm('Deseja realmente excluir este contato?')) {
-      this.service.deleteLista(contato.id).subscribe((data: any) => {
-        this.lista = data.result;
+    /*TODO mat-dialog para confirmar exclusão*/
+
+    if (confirm(`Deseja realmente excluir o contato ${ contato.nome }?`)) {
+      this.service.deletar(contato.id).subscribe(() => {
+        this.service.refresh();
       });
-      this.refresh();
     }
   };
-
-  refresh() {
-    this.service.getLista().subscribe((data: any) => {
-      this.lista = data.result;
-      this.dataSource = new MatTableDataSource(this.lista);
-      this.dataSource.paginator = this.paginator;
-      this.dataSource.sort = this.sort;
-    });
-  }
 
 }

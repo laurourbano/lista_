@@ -9,24 +9,28 @@ export class ListaService {
 
   constructor(private http: HttpClient) { }
 
-  getLista() {
+  buscarTodos() {
     return this.http.get('http://localhost:3000/api/ramais');
   }
 
-  getListaById(id: number) {
+  buscarUm(id: number) {
     return this.http.get(`http://localhost:3000/api/ramal/${ id }`);
   }
 
-  postLista(contato: Contato) {
+  adicionar(contato: Contato) {
     return this.http.post('http://localhost:3000/api/ramal', contato);
   }
 
-  putLista(contato: Contato) {
+  atualizar(contato: Contato) {
     return this.http.put(`http://localhost:3000/api/ramal/${ contato.id }`, contato);
   }
 
-  deleteLista(id: number) {
+  deletar(id: number) {
     return this.http.delete(`http://localhost:3000/api/ramal/${ id }`);
   }
 
+  //metodo para atualizar a página para cada inserção deleção atualização
+  refresh(): void {
+    window.location.reload();
+  }
 }
