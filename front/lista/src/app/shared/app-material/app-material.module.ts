@@ -9,7 +9,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   exports: [
     MatToolbarModule,
@@ -21,7 +21,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSortModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDialogModule
   ]
 })
 export class AppMaterialModule { }

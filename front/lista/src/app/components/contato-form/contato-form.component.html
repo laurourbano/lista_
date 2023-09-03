@@ -21,7 +21,7 @@
         <mat-label>Celular</mat-label>
         <input matInput type="tel">
       </mat-form-field>
-      <mat-form-field>
+      <mat-form-field class="example-form-field">
         <mat-label>Departamento</mat-label>
         <mat-select [(ngModel)]="selectedValue" name="food">
           <mat-option *ngFor="let departamento of departamentos" [value]="departamento.value">
@@ -29,7 +29,10 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-      <button mat-raised-button color="primary">Salvar</button>
+      <div class="acoes">
+        <button mat-raised-button color="primary">Salvar</button>
+        <button mat-raised-button color="warn" mat-dialog-close="true">Cancelar</button>
+      </div>
     </form>
   </mat-card-content>
 </mat-card>

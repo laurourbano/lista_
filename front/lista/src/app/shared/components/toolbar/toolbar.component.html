@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Empresa abc</span>
+
+  <span class="example-spacer"></span>
+
+  <!-- dentro do menu -->
+
+  <button mat-raised-button color="primary" (click)="criarContato()">
+    <mat-icon class="mat-18">add</mat-icon>Criar Contato
+  </button>
+  <button mat-raised-button color="primary" (click)="criarDepartamento()">
+    <mat-icon class="mat-18">add</mat-icon>Criar Departamento
+  </button>
+</mat-toolbar>
