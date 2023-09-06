@@ -10,9 +10,9 @@ router.post('/departamento', DepartamentoController.criar);
 router.put('/departamento/:id', DepartamentoController.atualizar);
 router.delete('/departamento/:id', DepartamentoController.excluir);
 // ramais
-router.get('/ramais', RamalController.buscarTodos);
-router.get('/ramal/:id', RamalController.buscarUm);
-router.post('/ramal', RamalController.criar);
-router.put('/ramal/:id', RamalController.atualizar);
-router.delete('/ramal/:id', RamalController.excluir);
+router.get('/funcionarios', RamalController.buscarTodos);
+router.get('/funcionario/:id', RamalController.buscarUm);
+router.post('/funcionario', RamalController.criar);
+router.put('/funcionario/:id', RamalController.atualizar);
+router.delete('/funcionario/:id', RamalController.excluir);
 module.exports = router;

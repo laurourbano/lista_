@@ -8,16 +8,15 @@ module.exports = {
             result: []
         };
 
-        let ramais = await RamalService.buscarTodos();
+        let funcionarios = await RamalService.buscarTodos();
 
-        for (let i in ramais) {
+        for (let i in funcionarios) {
             json.result.push({
-                id: ramais[i].id,
-                nome: ramais[i].nome,
-                email: ramais[i].email,
-                telefone: ramais[i].telefone,
-                celular: ramais[i].celular,
-                departamento: ramais[i].departamento
+                id: funcionarios[i].id,
+                nome: funcionarios[i].nome,
+                email: funcionarios[i].email,
+                telefone: funcionarios[i].telefone,
+                departamento: funcionarios[i].departamento
             });
         }
         res.json(json);
@@ -48,17 +47,15 @@ module.exports = {
         let nome = req.body.nome;
         let email = req.body.email;
         let telefone = req.body.telefone;
-        let celular = req.body.celular;
         let departamento = req.body.departamento;
 
-        if (nome && email && telefone && celular && departamento) {
-            let ramalId = await RamalService.criar(nome, email, telefone, celular, departamento);
+        if (nome && email && telefone && departamento) {
+            let ramalId = await RamalService.criar(nome, email, telefone, departamento);
             json.result = {
                 id: ramalId,
                 nome,
                 email,
                 telefone,
-                celular,
                 departamento
             };
         } else {
@@ -78,17 +75,15 @@ module.exports = {
         let nome = req.body.nome;
         let email = req.body.email;
         let telefone = req.body.telefone;
-        let celular = req.body.celular;
         let departamento = req.body.departamento;
 
-        if (id && nome && email && telefone && celular && departamento) {
-            await RamalService.atualizar(id, nome, email, telefone, celular, departamento);
+        if (id && nome && email && telefone && departamento) {
+            await RamalService.atualizar(id, nome, email, telefone, departamento);
             json.result = {
                 id,
                 nome,
                 email,
                 telefone,
-                celular,
                 departamento
             };
         } else {

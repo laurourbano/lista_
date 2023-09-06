@@ -30,9 +30,9 @@ module.exports = {
         });
     },
 
-    criar: (nome, email, telefone, celular, departamento) => {
+    criar: (nome, email, telefone, departamento) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('INSERT INTO funcionarios (nome, email, telefone, celular, departamento) VALUES (?, ?, ?, ?, ?)', [nome, email, telefone, celular, departamento], (error, results) => {
+            db.query('INSERT INTO funcionarios (nome, email, telefone, departamento) VALUES (?, ?, ?, ?)', [nome, email, telefone, departamento], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -44,7 +44,7 @@ module.exports = {
 
     atualizar: (id, nome, email, telefone, celular, departamento) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('UPDATE funcionarios SET nome = ?, email = ?, telefone = ?, celular = ?, departamento = ? WHERE id = ?', [nome, email, telefone, celular, departamento, id], (error, results) => {
+            db.query('UPDATE funcionarios SET nome = ?, email = ?, telefone = ?, departamento = ? WHERE id = ?', [nome, email, telefone, departamento, id], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
