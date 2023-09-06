@@ -4,7 +4,7 @@
     <mat-card-subtitle>Cadastro de Departamento</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <form>
+    <form (ngSubmit)="onDepartamentoSubmit()">
       <mat-form-field class="example-form-field">
         <mat-label>Nome</mat-label>
         <input matInput type="text">

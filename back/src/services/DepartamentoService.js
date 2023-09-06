@@ -4,7 +4,7 @@ const db = require('../db');
 module.exports = {
     buscarTodos: () => {
         return new Promise((aceito, rejeitado) => {
-            db.query('SELECT * FROM funcionarios', (error, results) => {
+            db.query('SELECT * FROM departamentos', (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -16,7 +16,7 @@ module.exports = {
 
     buscarUm: (id) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('SELECT * FROM funcionarios WHERE id = ?', [id], (error, results) => {
+            db.query('SELECT * FROM departamentos WHERE id = ?', [id], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -30,9 +30,9 @@ module.exports = {
         });
     },
 
-    criar: (nome, email, telefone, celular, departamento) => {
+    criar: (nome) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('INSERT INTO funcionarios (nome, email, telefone, celular, departamento) VALUES (?, ?, ?, ?, ?)', [nome, email, telefone, celular, departamento], (error, results) => {
+            db.query('INSERT INTO departamentos (nome) VALUES (?)', [nome], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -42,9 +42,9 @@ module.exports = {
         });
     },
 
-    atualizar: (id, nome, email, telefone, celular, departamento) => {
+    atualizar: (id, nome) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('UPDATE funcionarios SET nome = ?, email = ?, telefone = ?, celular = ?, departamento = ? WHERE id = ?', [nome, email, telefone, celular, departamento, id], (error, results) => {
+            db.query('UPDATE departamentos SET nome = ? WHERE id = ?', [nome, id], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -56,7 +56,7 @@ module.exports = {
 
     excluir: (id) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('DELETE FROM funcionarios WHERE id = ?', [id], (error, results) => {
+            db.query('DELETE FROM departamentos WHERE id = ?', [id], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;

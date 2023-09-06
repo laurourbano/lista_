@@ -18,12 +18,8 @@
         <input matInput type="tel">
       </mat-form-field>
       <mat-form-field class="example-form-field">
-        <mat-label>Celular</mat-label>
-        <input matInput type="tel">
-      </mat-form-field>
-      <mat-form-field class="example-form-field">
         <mat-label>Departamento</mat-label>
-        <mat-select [(ngModel)]="selectedValue" name="food">
+        <mat-select [(ngModel)]="selectedValue" name="departamento">
           <mat-option *ngFor="let departamento of departamentos" [value]="departamento.value">
             {{departamento.value}}
           </mat-option>

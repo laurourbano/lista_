@@ -33,4 +33,29 @@ export class ListaService {
   refresh(): void {
     window.location.reload();
   }
+
+  addDepartamento(departamento: string) {
+    return this.http.post('http://localhost:3000/api/departamento', departamento);
+  }
+
+  buscarDepartamentos() {
+    return this.http.get('http://localhost:3000/api/departamentos');
+  }
+
+  buscarDepartamento(id: number) {
+    return this.http.get(`http://localhost:3000/api/departamento/${ id }`);
+  }
+
+  deletarDepartamento(id: number) {
+    return this.http.delete(`http://localhost:3000/api/departamento/${ id }`);
+  }
+
+  atualizarDepartamento(departamento: string) {
+    return this.http.put(`http://localhost:3000/api/departamento/${ departamento }`, departamento);
+  }
+
+  buscarRamaisDepartamento(departamento: string) {
+    return this.http.get(`http://localhost:3000/api/ramais/${ departamento }`);
+  }
+
 }

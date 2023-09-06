@@ -33,6 +33,11 @@ export class DepartamentoFormComponent {
   constructor(private service: ListaService, private activeRoute: ActivatedRoute) {
 
   }
+  onDepartamentoSubmit() {
+    this.service.addDepartamento(this.selectedValue).subscribe((data) => {
+      console.log(data);
+    });
+  }
 }
 interface Departamento {
   value: string;

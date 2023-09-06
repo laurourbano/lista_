@@ -1,10 +1,11 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Contato } from 'src/app/model/contato';
 import { ListaService } from 'src/app/services/lista.service';
+import { DeleteDialogComponent } from 'src/app/shared/components/delete-dialog/delete-dialog.component';
 
 @Component({
   selector: 'app-table',
@@ -13,7 +14,7 @@ import { ListaService } from 'src/app/services/lista.service';
 })
 export class TableComponent {
 
-  displayedColumns: string[] = [ 'id', 'nome', 'email', 'telefone', 'celular', 'departamento', 'actions' ];
+  displayedColumns: string[] = [ 'nome', 'email', 'telefone', 'departamento', 'actions' ];
   dataSource!: MatTableDataSource<Contato>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -21,13 +22,18 @@ export class TableComponent {
 
   lista: Contato[] = [];
 
-  constructor(private http: HttpClient, private service: ListaService) {
+  constructor(private service: ListaService, private dialog: MatDialog) {
+    this.renderizaLista();
+  }
+
+  renderizaLista() {
     this.service.buscarTodos().subscribe((data: any) => {
       this.lista = data.result;
       this.dataSource = new MatTableDataSource(this.lista);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
     });
+
   }
 
   applyFilter(event: Event) {
@@ -40,13 +46,11 @@ export class TableComponent {
   }
 
   onDelete(contato: Contato) {
-    /*TODO mat-dialog para confirmar exclusão*/
-
-    if (confirm(`Deseja realmente excluir o contato ${ contato.nome }?`)) {
-      this.service.deletar(contato.id).subscribe(() => {
-        this.service.refresh();
-      });
-    }
+    this.dialog.open(DeleteDialogComponent);
   };
+
+  editarContato(contato: Contato) {
+    console.log(contato);
+  }
 
 }
