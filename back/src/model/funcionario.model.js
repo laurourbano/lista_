@@ -2,16 +2,15 @@
 // model de contato
 
 module.exports = (sequelize, DataTypes) => {
-    const Contato = sequelize.define('Contato', {
+    const Funcionario = sequelize.define('Funcionario', {
         nome: DataTypes.STRING,
         email: DataTypes.STRING,
-        telefone: DataTypes.STRING,
-        celular: DataTypes.STRING,
+        ramal: DataTypes.STRING,
         departamento: DataTypes.STRING
     }, {
-        tableName: 'contatos',
+        tableName: 'funcionarios',
         timestamps: false
     });
 
-    return Contato;
+    return Funcionario;
 };

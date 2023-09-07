@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const RamalService = require('../services/RamalService');
+const RamalService = require('../services/FuncionarioService');
 
 module.exports = {
     buscarTodos: async (_, res) => {
@@ -12,11 +12,11 @@ module.exports = {
 
         for (let i in funcionarios) {
             json.result.push({
-                id: funcionarios[i].id,
-                nome: funcionarios[i].nome,
+                idfuncionario: funcionarios[i].idfuncionario,
+                nomefuncionario: funcionarios[i].nomefuncionario,
                 email: funcionarios[i].email,
-                telefone: funcionarios[i].telefone,
-                departamento: funcionarios[i].departamento
+                ramal: funcionarios[i].ramal,
+                iddepartamento: funcionarios[i].iddepartamento
             });
         }
         res.json(json);
@@ -28,8 +28,8 @@ module.exports = {
             result: {}
         };
 
-        let id = req.params.id;
-        let ramal = await RamalService.buscarUm(id);
+        let idfuncionario = req.params.idfuncionario;
+        let ramal = await RamalService.buscarUm(idfuncionario);
 
         if (ramal) {
             json.result = ramal;
@@ -44,19 +44,19 @@ module.exports = {
             result: {}
         };
 
-        let nome = req.body.nome;
+        let nomefuncionario = req.body.nomefuncionario;
         let email = req.body.email;
-        let telefone = req.body.telefone;
-        let departamento = req.body.departamento;
+        let ramal = req.body.ramal;
+        let iddepartamento = req.body.iddepartamento;
 
-        if (nome && email && telefone && departamento) {
-            let ramalId = await RamalService.criar(nome, email, telefone, departamento);
+        if (nomefuncionario && email && ramal && iddepartamento) {
+            let funcionarioId = await RamalService.criar(nomefuncionario, email, ramal, iddepartamento);
             json.result = {
-                id: ramalId,
-                nome,
+                idfuncionario: funcionarioId,
+                nomefuncionario,
                 email,
-                telefone,
-                departamento
+                ramal,
+                iddepartamento
             };
         } else {
             json.error = 'Campos não enviados';
@@ -71,20 +71,20 @@ module.exports = {
             result: {}
         };
 
-        let id = req.params.id;
-        let nome = req.body.nome;
+        let idfuncionario = req.params.idfuncionario;
+        let nomefuncionario = req.body.nomefuncionario;
         let email = req.body.email;
-        let telefone = req.body.telefone;
-        let departamento = req.body.departamento;
+        let ramal = req.body.ramal;
+        let iddepartamento = req.body.iddepartamento;
 
-        if (id && nome && email && telefone && departamento) {
-            await RamalService.atualizar(id, nome, email, telefone, departamento);
+        if (idfuncionario && nomefuncionario && email && ramal && iddepartamento) {
+            await RamalService.atualizar(idfuncionario, nomefuncionario, email, ramal, iddepartamento);
             json.result = {
-                id,
-                nome,
+                idfuncionario,
+                nomefuncionario,
                 email,
-                telefone,
-                departamento
+                ramal,
+                iddepartamento
             };
         } else {
             json.error = 'Campos não enviados';
@@ -99,7 +99,7 @@ module.exports = {
             result: {}
         };
 
-        await RamalService.excluir(req.params.id);
+        await RamalService.excluir(req.params.idfuncionario);
 
         res.json(json);
     }

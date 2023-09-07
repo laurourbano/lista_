@@ -12,8 +12,8 @@ module.exports = {
 
         for (let i in departamento) {
             json.result.push({
-                id: departamento[i].id,
-                nome: departamento[i].nome,
+                iddepartamento: departamento[i].iddepartamento,
+                nomedepartamento: departamento[i].nomedepartamento,
             });
         }
         res.json(json);
@@ -25,8 +25,8 @@ module.exports = {
             result: {}
         };
 
-        let id = req.params.id;
-        let departamento = await DepartamentoService.buscarUm(id);
+        let iddepartamento = req.params.iddepartamento;
+        let departamento = await DepartamentoService.buscarUm(iddepartamento);
 
         if (departamento) {
             json.result = departamento;
@@ -41,13 +41,13 @@ module.exports = {
             result: {}
         };
 
-        let nome = req.body.nome;
+        let nomedepartamento = req.body.nomedepartamento;
 
-        if (nome) {
-            let departamentoId = await DepartamentoService.criar(nome);
+        if (nomedepartamento) {
+            let departamentoId = await DepartamentoService.criar(nomedepartamento);
             json.result = {
-                id: departamentoId,
-                nome
+                iddepartamento: departamentoId,
+                nomedepartamento
             };
         } else {
             json.error = 'Campos não enviados';
@@ -62,14 +62,14 @@ module.exports = {
             result: {}
         };
 
-        let id = req.params.id;
-        let nome = req.body.nome;
+        let iddepartamento = req.params.iddepartamento;
+        let nomedepartamento = req.body.nomedepartamento;
 
-        if (id && nome) {
-            await DepartamentoService.atualizar(id, nome);
+        if (iddepartamento && nomedepartamento) {
+            await DepartamentoService.atualizar(iddepartamento, nomedepartamento);
             json.result = {
-                id,
-                nome
+                iddepartamento,
+                nomedepartamento
             };
         } else {
             json.error = 'Campos não enviados';
@@ -84,7 +84,7 @@ module.exports = {
             result: {}
         };
 
-        await DepartamentoService.excluir(req.params.id);
+        await DepartamentoService.excluir(req.params.iddepartamento);
 
         res.json(json);
     }

@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { Contato } from 'src/app/model/contato';
+import { Funcionario } from 'src/app/model/funcionarios';
 import { ListaService } from 'src/app/services/lista.service';
 import { DeleteDialogComponent } from 'src/app/shared/components/delete-dialog/delete-dialog.component';
 
@@ -14,13 +14,13 @@ import { DeleteDialogComponent } from 'src/app/shared/components/delete-dialog/d
 })
 export class TableComponent {
 
-  displayedColumns: string[] = [ 'nome', 'email', 'telefone', 'departamento', 'actions' ];
-  dataSource!: MatTableDataSource<Contato>;
+  displayedColumns: string[] = [ 'nome', 'email', 'ramal', 'departamento', 'actions' ];
+  dataSource!: MatTableDataSource<Funcionario>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
-  lista: Contato[] = [];
+  lista: Funcionario[] = [];
 
   constructor(private service: ListaService, private dialog: MatDialog) {
     this.renderizaLista();
@@ -45,12 +45,12 @@ export class TableComponent {
     }
   }
 
-  onDelete(contato: Contato) {
+  onDelete(funcionario: Funcionario) {
     this.dialog.open(DeleteDialogComponent);
   };
 
-  editarContato(contato: Contato) {
-    console.log(contato);
+  editarFuncionario(funcionario: Funcionario) {
+    console.log(funcionario);
   }
 
 }

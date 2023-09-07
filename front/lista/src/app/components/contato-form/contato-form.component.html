@@ -20,8 +20,8 @@
       <mat-form-field class="example-form-field">
         <mat-label>Departamento</mat-label>
         <mat-select [(ngModel)]="selectedValue" name="departamento">
-          <mat-option *ngFor="let departamento of departamentos" [value]="departamento.value">
-            {{departamento.value}}
+          <mat-option *ngFor="let departamento of departamentos" [value]="departamento">
+            {{departamento}}
           </mat-option>
         </mat-select>
       </mat-form-field>
