@@ -5,14 +5,13 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Funcionario } from 'src/app/model/funcionarios';
 import { ListaService } from 'src/app/services/lista.service';
-import { DeleteDialogComponent } from 'src/app/shared/components/delete-dialog/delete-dialog.component';
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: [ './table.component.scss' ],
+  selector: 'app-funcionario-list',
+  templateUrl: './funcionario-list.component.html',
+  styleUrls: [ './funcionario-list.component.scss' ],
 })
-export class TableComponent {
+export class FuncionarioListComponent {
 
   displayedColumns: string[] = [ 'nome', 'email', 'ramal', 'departamento', 'actions' ];
   dataSource!: MatTableDataSource<Funcionario>;
@@ -27,7 +26,7 @@ export class TableComponent {
   }
 
   renderizaLista() {
-    this.service.buscarTodos().subscribe((data: any) => {
+    this.service.buscarFuncionarios().subscribe((data: any) => {
       this.lista = data.result;
       this.dataSource = new MatTableDataSource(this.lista);
       this.dataSource.paginator = this.paginator;
@@ -46,7 +45,7 @@ export class TableComponent {
   }
 
   onDelete(funcionario: Funcionario) {
-    this.dialog.open(DeleteDialogComponent);
+    console.log(funcionario);
   };
 
   editarFuncionario(funcionario: Funcionario) {

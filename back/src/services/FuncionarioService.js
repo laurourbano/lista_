@@ -4,7 +4,12 @@ const db = require('../db');
 module.exports = {
     buscarTodos: () => {
         return new Promise((aceito, rejeitado) => {
-            db.query('SELECT * FROM funcionarios', (error, results) => {
+            db.query(`SELECT lista.funcionarios.idfuncionario,
+                    lista.funcionarios.nomefuncionario,
+                    lista.funcionarios.email,
+                    lista.funcionarios.ramal,
+                    lista.departamentos.iddepartamento,
+                    lista.departamentos.nomedepartamento FROM lista.funcionarios INNER JOIN lista.departamentos ON lista.funcionarios.iddepartamento = lista.departamentos.iddepartamento;`, (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -16,7 +21,12 @@ module.exports = {
 
     buscarUm: (id) => {
         return new Promise((aceito, rejeitado) => {
-            db.query('SELECT * FROM funcionarios WHERE id = ?', [id], (error, results) => {
+            db.query(`SELECT lista.funcionarios.idfuncionario,
+                    lista.funcionarios.nomefuncionario,
+                    lista.funcionarios.email,
+                    lista.funcionarios.ramal,
+                    lista.departamentos.iddepartamento,
+                    lista.departamentos.nomedepartamento FROM lista.funcionarios INNER JOIN lista.departamentos ON lista.funcionarios.iddepartamento = lista.departamentos.iddepartamento; WHERE id = ?`, [id], (error, results) => {
                 if (error) {
                     rejeitado(error);
                     return;
@@ -42,7 +52,7 @@ module.exports = {
         });
     },
 
-    atualizar: (id, nome, email, telefone, celular, departamento) => {
+    atualizar: (id, nome, email, telefone, departamento) => {
         return new Promise((aceito, rejeitado) => {
             db.query('UPDATE funcionarios SET nome = ?, email = ?, telefone = ?, departamento = ? WHERE id = ?', [nome, email, telefone, departamento, id], (error, results) => {
                 if (error) {

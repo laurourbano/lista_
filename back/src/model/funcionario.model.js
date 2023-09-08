@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
-// model de contato
-
+// model de funcionario
 module.exports = (sequelize, DataTypes) => {
     const Funcionario = sequelize.define('Funcionario', {
         nome: DataTypes.STRING,

@@ -1,18 +1,11 @@
 /* eslint-disable linebreak-style */
 const express = require('express');
 const router = express.Router();
-const RamalController = require('./controllers/RamalController');
-const DepartamentoController = require('./controllers/DepartamentoController');
-// departamentos
-router.get('/departamentos', DepartamentoController.buscarTodos);
-router.get('/departamento/:id', DepartamentoController.buscarUm);
-router.post('/departamento', DepartamentoController.criar);
-router.put('/departamento/:id', DepartamentoController.atualizar);
-router.delete('/departamento/:id', DepartamentoController.excluir);
-// ramais
-router.get('/funcionarios', RamalController.buscarTodos);
-router.get('/funcionario/:id', RamalController.buscarUm);
-router.post('/funcionario', RamalController.criar);
-router.put('/funcionario/:id', RamalController.atualizar);
-router.delete('/funcionario/:id', RamalController.excluir);
+const FuncionarioController = require('./controllers/FuncionarioController');
+// funcionarios
+router.get('/funcionarios', FuncionarioController.buscarTodos);
+router.get('/funcionario/:id', FuncionarioController.buscarUm);
+router.post('/funcionario', FuncionarioController.criar);
+router.put('/funcionario/:id', FuncionarioController.atualizar);
+router.delete('/funcionario/:id', FuncionarioController.excluir);
 module.exports = router;

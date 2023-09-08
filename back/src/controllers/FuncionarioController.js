@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-const RamalService = require('../services/FuncionarioService');
+const FuncionarioService = require('../services/FuncionarioService');
 
 module.exports = {
     buscarTodos: async (_, res) => {
@@ -8,7 +8,7 @@ module.exports = {
             result: []
         };
 
-        let funcionarios = await RamalService.buscarTodos();
+        let funcionarios = await FuncionarioService.buscarTodos();
 
         for (let i in funcionarios) {
             json.result.push({
@@ -16,7 +16,8 @@ module.exports = {
                 nomefuncionario: funcionarios[i].nomefuncionario,
                 email: funcionarios[i].email,
                 ramal: funcionarios[i].ramal,
-                iddepartamento: funcionarios[i].iddepartamento
+                iddepartamento: funcionarios[i].iddepartamento,
+                nomedepartamento: funcionarios[i].nomedepartamento
             });
         }
         res.json(json);
@@ -29,7 +30,7 @@ module.exports = {
         };
 
         let idfuncionario = req.params.idfuncionario;
-        let ramal = await RamalService.buscarUm(idfuncionario);
+        let ramal = await FuncionarioService.buscarUm(idfuncionario);
 
         if (ramal) {
             json.result = ramal;
@@ -50,7 +51,7 @@ module.exports = {
         let iddepartamento = req.body.iddepartamento;
 
         if (nomefuncionario && email && ramal && iddepartamento) {
-            let funcionarioId = await RamalService.criar(nomefuncionario, email, ramal, iddepartamento);
+            let funcionarioId = await FuncionarioService.criar(nomefuncionario, email, ramal, iddepartamento);
             json.result = {
                 idfuncionario: funcionarioId,
                 nomefuncionario,
@@ -78,7 +79,7 @@ module.exports = {
         let iddepartamento = req.body.iddepartamento;
 
         if (idfuncionario && nomefuncionario && email && ramal && iddepartamento) {
-            await RamalService.atualizar(idfuncionario, nomefuncionario, email, ramal, iddepartamento);
+            await FuncionarioService.atualizar(idfuncionario, nomefuncionario, email, ramal, iddepartamento);
             json.result = {
                 idfuncionario,
                 nomefuncionario,
@@ -99,7 +100,7 @@ module.exports = {
             result: {}
         };
 
-        await RamalService.excluir(req.params.idfuncionario);
+        await FuncionarioService.excluir(req.params.idfuncionario);
 
         res.json(json);
     }
