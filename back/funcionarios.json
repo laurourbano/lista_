@@ -1,0 +1,475 @@
+[{
+    "idfuncionario": 1,
+    "nomefuncionario": "Nilze",
+    "ramal": "9544",
+    "iddepartamento": 1
+},
+{
+    "idfuncionario": 2,
+    "nomefuncionario": "Patricia",
+    "ramal": "9553",
+    "iddepartamento": 1
+},
+{
+    "idfuncionario": 3,
+    "nomefuncionario": "Rejane",
+    "ramal": "9542",
+    "iddepartamento": 1
+},
+{
+    "idfuncionario": 1,
+    "nomefuncionario": "Ana",
+    "ramal": "9563",
+    "iddepartamento": 1
+
+},
+{
+    "idfuncionario": 2,
+    "nomefuncionario": "Laura",
+    "ramal": "9561",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 3,
+    "nomefuncionario": "Michelly",
+    "ramal": "9560",
+    "iddepartamento": 1
+  },
+{
+    "idfuncionario": 1,
+    "nomefuncionario": "Maria Augusta",
+    "ramal": "9557",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 2,
+    "nomefuncionario": "Karine",
+    "ramal": "9540",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 1,
+    "nomefuncionario": "Arindal",
+    "ramal": "9501",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 2,
+    "nomefuncionario": "Celita",
+    "ramal": "",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 3,
+    "nomefuncionario": "Eduardo",
+    "ramal": "9506",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 4,
+    "nomefuncionario": "Flavia",
+    "ramal": "9510",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 5,
+    "nomefuncionario": "Gabriele",
+    "ramal": "9520",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 6,
+    "nomefuncionario": "Lauro",
+    "ramal": "9607",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 7,
+    "nomefuncionario": "Lourdes",
+    "ramal": "9606",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 8,
+    "nomefuncionario": "Melany",
+    "ramal": "9505",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 9,
+    "nomefuncionario": "Rodrigo",
+    "ramal": "9508",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 10,
+    "nomefuncionario": "Talita",
+    "ramal": "9504",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 11,
+    "nomefuncionario": "Thalles",
+    "ramal": "9507",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 12,
+    "nomefuncionario": "Victoria",
+    "ramal": "9503",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 13,
+    "nomefuncionario": "Rafael",
+    "ramal": "9521",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 14,
+    "nomefuncionario": "Sara",
+    "ramal": "9502",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 15,
+    "nomefuncionario": "Silvia",
+    "ramal": "9522",
+    "iddepartamento": 1
+  },
+  {
+    "idfuncionario": 16,
+    "nomefuncionario": "Lorena",
+    "ramal": "9501",
+    "iddepartamento": 1
+  },
+{
+    "idfuncionario": 17,
+    "nomefuncionario": "Guilherme",
+    "ramal": "9530",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 18,
+    "nomefuncionario": "Luiz",
+    "ramal": "9532",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 19,
+    "nomefuncionario": "Nilza",
+    "ramal": "9531",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 20,
+    "nomefuncionario": "Sergio",
+    "ramal": "9533",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 21,
+    "nomefuncionario": "Almir",
+    "ramal": "9603",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 22,
+    "nomefuncionario": "Viviane",
+    "ramal": "9586",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 23,
+    "nomefuncionario": "Eluise",
+    "ramal": "9603",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 24,
+    "nomefuncionario": "Hennir",
+    "ramal": "9534",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 25,
+    "nomefuncionario": "Marissol",
+    "ramal": "9535",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 26,
+    "nomefuncionario": "Ana Carolina",
+    "ramal": "9569",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 27,
+    "nomefuncionario": "Edneia",
+    "ramal": "9552",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 28,
+    "nomefuncionario": "Fernanda",
+    "ramal": "9585",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 29,
+    "nomefuncionario": "Rayra",
+    "ramal": "9582",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 30,
+    "nomefuncionario": "Edivar",
+    "ramal": "9512",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 31,
+    "nomefuncionario": "Ana",
+    "ramal": "9541",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 32,
+    "nomefuncionario": "Vinicius",
+    "ramal": "9574",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 33,
+    "nomefuncionario": "Josiane",
+    "ramal": "9573",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 34,
+    "nomefuncionario": "Melissa",
+    "ramal": "9570",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 35,
+    "nomefuncionario": "Guilherme",
+          
+    "ramal": "9571",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 36,
+    "nomefuncionario": "Douglas",
+    "ramal": "9594",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 37,
+    "nomefuncionario": "Karoline",
+    "ramal": "9590",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 38,
+    "nomefuncionario": "Leticia",
+    "ramal": "9591",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 39,
+    "nomefuncionario": "Orivaldo",
+    "ramal": "9592",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 40,
+    "nomefuncionario": "Patricia",
+    "ramal": "9548",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 41,
+    "nomefuncionario": "Tayna",
+    "ramal": "9595",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 42,
+    "nomefuncionario": "Ygor",
+    "ramal": "9592",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 43,
+    "nomefuncionario": "Camila",
+    "ramal": "9548",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 44,
+    "nomefuncionario": "Jessica",
+    "ramal": "9547",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 45,  
+    "nomefuncionario": "Cristiane",
+    "ramal": "9545",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 46,
+    "nomefuncionario": "Maria Isabel",  
+    "ramal": "9546",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 47,
+    "nomefuncionario": "Eduarda",
+    "ramal": "9608",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 48,
+    "nomefuncionario": "Jackson",
+    "ramal": "9581",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 49,
+    "nomefuncionario": "Karin",
+    "ramal": "9565",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 50,
+    "nomefuncionario": "Rafaela",
+    "ramal": "9580",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 51,
+    "nomefuncionario": "HelpDesk",
+    "ramal": "9511",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 52,
+    "nomefuncionario": "Marcus",
+    "ramal": "9601",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 53,
+    "nomefuncionario": "Sander",
+    "ramal": "9600",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 54,
+    "nomefuncionario": "Eduardo",
+    "ramal": "",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 55,
+    "nomefuncionario": "Greyzel",
+    "ramal": "9575",
+    "iddepartamento": 1
+        },
+        {
+    "idfuncionario": 56,
+    
+
+        "Greyzel": {
+            "RAMAL": "9575",
+            "E-MAIL": "greyzel.benke@crf-pr.org.br"
+        },
+        "Marcio": {
+            "RAMAL": "9607",
+            "E-MAIL": "marcio.antoniassi@crf-pr.org.br"
+        },
+        "Valquires": {
+            "RAMAL": "9576",
+            "E-MAIL": "valquires.godoy@crf-pr.org.br"
+        }
+    },
+        "Daiane": {
+            "NOME": "Daiane Perondi",
+            "E-MAIL": "daiane.perondi.crfpr@gmail.com",
+            "REGIaO": "Toledo"
+        },
+        "Eduardo": {
+            "NOME": "Eduardo Freitas",
+            "E-MAIL": "eduardo.freitas.crfpr@gmail.com",
+            "REGIaO": "Curitiba"
+        },
+        "Elias": {
+            "NOME": "Elias Montani",
+            "E-MAIL": "elias.montin.crfpr@gmail.com",
+            "REGIaO": "Curitiba"
+        },
+        "Garcia": {
+            "NOME": "Edson Garcia",
+            "E-MAIL": "edson.garcia.crfpr@gmail.com",
+            "REGIaO": "Londrina"
+        },
+        "Luciano": {
+            "NOME": "Luciano Goncalves",
+            "E-MAIL": "luciano.goncalves.crfpr@gmail.com",
+            "REGIaO": "Maringa"
+        },
+        "Marcelo": {
+            "NOME": "Marcelo Polak",
+            "E-MAIL": "marcelo.polak.crfpr@gmail.com",
+            "REGIaO": "Curitiba"
+        },
+        "Nayana": {
+            "NOME": "Nayana Banha",
+            "E-MAIL": "nayana.banhara.crfpr@gmail.com",
+            "REGIaO": "Curitiba"
+        },
+        "Pacola": {
+            "NOME": "Jose Pacola",
+            "E-MAIL": "jose.pacola.crfpr@gmail.com",
+            "REGIaO": "Francisco Beltrao"
+        },
+        "Pazim": {
+            "NOME": "Eduardo Pazim",
+            "E-MAIL": "eduardo.pazim.crfpr@gmail.com",
+            "REGIaO": "Curitiba"
+        },
+        "Ribamar": {
+            "NOME": "Ribamar Schmidt",
+            "E-MAIL": "ribamar.schmitz.crfpr@gmail.com",
+            "REGIaO": "Ponta Grossa"
+        },
+        "Salem": {
+            "NOME": "Jorge Salem",
+            "E-MAIL": "jorge.salem.crfpr@gmail.com",
+            "REGIaO": "Maringa"
+        },
+        "Silvio": {
+            "NOME": "Silvio Franchetti",
+            "E-MAIL": "silvio.franchetti.crfpr@gmail.com",
+            "REGIaO": "Maringa"
+        },
+        "Siqueira": {
+            "NOME": "Edson Alves",
+            "E-MAIL": "edson.alves.crfpr@gmail.com",
+            "REGIaO": "Cascavel"
+        },
+        "Welinson": {
+            "NOME": "Welinson Silva",
+            "E-MAIL": "welison.silva@crf-pr.org.br",
+            "REGIaO": "Curitiba"
+        },
+        "Glaucio": {
+            "NOME": "Glaucio Rodrigues",
+            "E-MAIL": "glaucio.rodrigues.crfpr@gmail.com",
+            "REGIaO": "Maringa"
+        }
+    }
+}]
+}
